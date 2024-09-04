@@ -14,7 +14,6 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private authService: AuthService) { }
 
   ngOnInit(): void {
-    //Nous verrons plus tard comment gérer cela avec des observables
     this.authService.isUserConnected();
     this.playerName = this.authService.user?.username || '';
   }

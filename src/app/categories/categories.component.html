@@ -1,0 +1,7 @@
+<div class="categories">
+  <div *ngFor="let category of filteredCategories" class="category-card">
+    <h2>{{ category.name }}</h2>
+    <p>{{ category.description }}</p>
+    <button (click)="navigateToQuiz(category.id)">Voir les questions</button>
+  </div>
+</div>

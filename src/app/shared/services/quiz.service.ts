@@ -38,8 +38,10 @@ export class QuizService {
     this.playerAnswers.push({questionId, answer});
   }
 
-  getQuizContent() {
-    this.http.get('http://localhost:3000/questions').subscribe((questions: any) => {
+  getQuizContent(categoryId: number) {
+    this.quizContent = []; // Réinitialisation pour éviter l'accumulation de questions
+    this.http.get(`http://localhost:3000/questions?categoryId=${categoryId}`).subscribe((questions: any) => {
+      console.log('Questions retrieved:', questions); // Ajout de cette ligne pour déboguer
       for (const question of questions) {
         this.http.get(`http://localhost:3000/answers?questionId=${question.id}`).subscribe((answers: any) => {
           this.quizContent.push({
@@ -47,6 +49,7 @@ export class QuizService {
               question: question.questionLabel,
               answers
           });
+          console.log('Quiz Content:', this.quizContent); // Ajout de cette ligne pour vérifier le contenu
         });
       }
     });

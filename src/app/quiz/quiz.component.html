@@ -2,10 +2,10 @@
   <h2 class="quiz_title">C'est parti {{ playerName }}, soit prêt !</h2>
   <section class="quiz_reset" *ngIf="isQuizFinished">
     <h3>You can see your answers</h3>
-    <button class="btn--outline">Reset</button>
+    <button class="btn--outline" (click)="quizService.resetQuiz()">Reset</button>
   </section>
   <section class="quiz_questions-list">
-    <app-question></app-question>
+    <app-question *ngFor="let question of quizService.quizContent" [question]="question"></app-question>
   </section>
   <div class="quiz_validation">
     <button (click)="goToResultPage()" class="btn">Show score</button>

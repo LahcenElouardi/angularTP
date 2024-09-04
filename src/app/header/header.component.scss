@@ -1,15 +1,39 @@
 .header {
-  @apply bg-violet-500 text-white p-4 flex justify-between items-center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
 
-  h1 {
-    @apply text-2xl font-bold;
-  }
+  .header_user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-  &_user {
-    @apply flex items-center;
+    button.btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-    h2 {
-      @apply text-lg font-bold mr-4;
+    button.btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    button.btn-secondary {
+      background-color: #6c757d;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button.btn-secondary:hover {
+      background-color: #5a6268;
     }
   }
 }

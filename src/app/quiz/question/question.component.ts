@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { QuizService } from "../../shared/services/quiz.service";
 
 @Component({
@@ -7,11 +7,12 @@ import { QuizService } from "../../shared/services/quiz.service";
   styleUrls: ['./question.component.scss']
 })
 export class QuestionComponent implements OnInit {
-  quizContent: any[] = this.quizService.quizContent;
+  @Input() question: any;  
+  quizContent: any[] = [];
 
   constructor(private quizService: QuizService) { }
 
   ngOnInit(): void {
-    this.quizService.getQuizContent();
+    this.quizContent = this.quizService.quizContent;
   }
 }
