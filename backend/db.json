@@ -52,10 +52,28 @@
       "id": "9367"
     },
     {
+      "questionId": 1,
+      "answerLabel": "A directive",
+      "isCorrect": false,
+      "id": "bb71"
+    },
+    {
       "questionId": 2,
       "answerLabel": "NgModule is used to declare and configure modules in Angular applications.",
       "isCorrect": true,
       "id": "5eb8"
+    },
+    {
+      "questionId": 2,
+      "answerLabel": "A component",
+      "isCorrect": false,
+      "id": "cc23"
+    },
+    {
+      "questionId": 2,
+      "answerLabel": "A service",
+      "isCorrect": false,
+      "id": "dd45"
     },
     {
       "questionId": 3,
@@ -64,16 +82,52 @@
       "id": "0502"
     },
     {
+      "questionId": 3,
+      "answerLabel": "Using HTML and CSS",
+      "isCorrect": false,
+      "id": "aa12"
+    },
+    {
+      "questionId": 3,
+      "answerLabel": "With JavaScript",
+      "isCorrect": false,
+      "id": "ab34"
+    },
+    {
       "questionId": 4,
       "answerLabel": "Data binding in Angular is a mechanism for synchronizing data between the component and the view.",
       "isCorrect": true,
       "id": "a8d9"
     },
     {
+      "questionId": 4,
+      "answerLabel": "Data binding is for styling.",
+      "isCorrect": false,
+      "id": "f3f1"
+    },
+    {
+      "questionId": 4,
+      "answerLabel": "Data binding is only for routing.",
+      "isCorrect": false,
+      "id": "g4g2"
+    },
+    {
       "questionId": 5,
       "answerLabel": "{{}} (interpolation) is used for displaying dynamic data in the template.",
       "isCorrect": true,
       "id": "3241"
+    },
+    {
+      "questionId": 5,
+      "answerLabel": "[property] (property binding) is for two-way binding.",
+      "isCorrect": false,
+      "id": "d6d7"
+    },
+    {
+      "questionId": 5,
+      "answerLabel": "Interpolation is for event binding.",
+      "isCorrect": false,
+      "id": "h7h8"
     }
   ],
   "users": [
