@@ -1,4 +1,16 @@
 <div class="categories">
+  <section>
+    <div>
+      <input
+        type="text"
+        placeholder="Rechercher une catégorie"
+        [(ngModel)]="searchQuery"
+        (input)="onSearch()"
+      />
+      <button (click)="resetFilter()">Réinitialiser</button>
+    </div>
+  </section>
+  
   <div *ngFor="let category of filteredCategories" class="category-card">
     <h2>{{ category.name }}</h2>
     <p>{{ category.description }}</p>
